@@ -1,0 +1,108 @@
+body{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1800' height='720' preserveAspectRatio='none' viewBox='0 0 1280 720'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1021%26quot%3b)' fill='none'%3e%3crect width='1280' height='720' x='0' y='0' fill='rgba(235%2c 234%2c 234%2c 1)'%3e%3c/rect%3e%3cpath d='M -62.05557560655973%2c379 C 23.34%2c354.2 194.14%2c205.4 364.9444243934403%2c255 C 535.74%2c304.6 621.14%2c626.2 791.9444243934403%2c627 C 962.74%2c627.8 1048.14%2c309.8 1218.9444243934404%2c259 C 1389.74%2c208.2 1633.73%2c394.2 1645.9444243934404%2c373 C 1658.16%2c351.8 1353.19%2c197 1280%2c153' stroke='rgba(122%2c 210%2c 214%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -482.6382523210423%2c485 C -397.24%2c451.2 -226.44%2c338.2 -55.63825232104227%2c316 C 115.16%2c293.8 200.56%2c419 371.3617476789577%2c374 C 542.16%2c329 627.56%2c85.4 798.3617476789577%2c91 C 969.16%2c96.6 1129.03%2c401.6 1225.3617476789577%2c402 C 1321.69%2c402.4 1269.07%2c154.8 1280%2c93' stroke='rgba(122%2c 210%2c 214%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -391.95858725738947%2c221 C -306.56%2c290.6 -135.76%2c575.8 35.04141274261053%2c569 C 205.84%2c562.2 291.24%2c180.2 462.04141274261053%2c187 C 632.84%2c193.8 718.24%2c572.6 889.0414127426105%2c603 C 1059.84%2c633.4 1237.85%2c333 1316.0414127426106%2c339 C 1394.23%2c345 1287.21%2c574.2 1280%2c633' stroke='rgba(122%2c 210%2c 214%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -41.669564335370694%2c467 C 43.73%2c437.2 214.53%2c291.8 385.3304356646293%2c318 C 556.13%2c344.2 641.53%2c599.4 812.3304356646292%2c598 C 983.13%2c596.6 1068.53%2c337.2 1239.3304356646292%2c311 C 1410.13%2c284.8 1658.2%2c508 1666.3304356646292%2c467 C 1674.46%2c426 1357.27%2c178.2 1280%2c106' stroke='rgba(122%2c 210%2c 214%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1021'%3e%3crect width='1280' height='720' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+*{
+    font-family: var(--font);
+    font-weight: 400;
+}
+.container{
+    width: 100%;
+    height: 97vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login__Container{
+    width: 70%;
+    height: 80%;
+    display: flex;
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+}
+.imagen{
+    width: 50%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+}
+.login__form{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    font-size: 3rem;
+    color: var(--black);
+    font-style: italic;
+}
+.form-group{
+    width: 70%;
+    /* height: 3rem; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: .5rem 0;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    background-color: var(--bold-white);
+}
+.icon{
+    width: 2rem;
+    height: 1.5rem;
+}
+.input{
+    width: 80%;
+    height: 2rem;
+    border: none;
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+}
+.input:focus{
+    outline: none;
+}
+.button-group{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+.button-group > button{
+    width: 140px;
+    height: 50px;
+    font-size: 1rem;
+    border-radius: 0;
+    border: none;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    text-align: center;
+    font-weight: 700;
+}
+small{
+    font-size: 1rem;
+    font-family: var(--font);
+    font-style: italic;
+}
+.button-group > button:first-child{
+    background-color: var(--ligth-blue);
+}
+.button-group > button:hover{
+    background-color: var(--super-light-green);
+    color: var(--bold-white);
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 3vh;
+    text-align: center;
+}
+
+.signin{
+    height: 2rem;
+    font-size: 1rem;
+}

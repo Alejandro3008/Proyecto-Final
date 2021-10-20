@@ -11,31 +11,35 @@
     <link rel="stylesheet" type="text/css" href="./css/custom-properties.css">
     <link rel="stylesheet" type="text/css" href="./css/login&signinStyles.css">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>   
-    <title>Node SA. de C.V</title>
+    <title>Sign In</title>
 </head>
 <body>
     <section class="container">
         <section class="login__Container">
             <img class="imagen" src="./Assets/altumcode-zE007SNgcdE-unsplash.jpg" alt="Image">
             <article class="login__form">
-                <h1 class="title">Inicio Sesion <small>Admins</small></h1>
-                <article class="form-group">
+                <h1 class="title">Registro <small>Admins</small></h1>
+                <article class="form-group signin">
                     <img class="icon" src="./Assets/User.svg.svg" alt="User-Icon">
+                    <input type="text" class="input" name="email" id="input-name" placeholder="Nombre">
+                </article>
+                <article class="form-group signin">
+                    <img class="icon" src="./Assets/Email.svg.svg" alt="User-Icon">
                     <input type="email" class="input" name="email" id="input-email" placeholder="mail@dominio.ext">
                 </article>
-                <article class="form-group">
+                <article class="form-group signin">
                     <img class="icon" src="./Assets/Password.svg.svg" alt="Password-icon">
                     <input type="password" name="password" class="input" id="input-password" placeholder="***********">
                 </article>
                 <article class="button-group">
                     <button id="btn-send" type="submit">Enviar</button>
-                    <button id="btn-signin">Registrarme</button>
+                    <button id="btn-login" >Iniciar Sesion</button>
                 </article>
             </article>
         </section>
     </section>
-    <footer class="footer"><cite>Sitio creado por @alejandro</cite></footer>
-    <script src="js/login.js"></script>
+    <footer class="footer"><cite>Sitios creado por @alejandro</cite></footer>
+    <script src="js/signin.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.8/dist/sweetalert2.all.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/custom-properties.css">
+    <link rel="stylesheet" type="text/css" href="./css/mainStyles.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>  
+    <title>Employees</title>
+</head>
+<body>
+    <header class="menuContainer" id="menuContainer">
+        <div class="containerLogo">
+            <img class="logo" src="./Assets/Logo.svg.svg" alt="Logo">
+        </div>
+        <div class="containerSearch">
+            <input class="input-search" name="" id="">
+            <button class="button-search" type="submit"><img src="./Assets/Search.svg.svg" alt="Search-Icon"></button>
+        </div>
+        <button type="submit" class="btnCloseSession" id="btnCloseSession">Salir</button>
+    </header>
+    <main class="containerContent" id="containerContent">
+        <article class="addEmployeeOptionContainer">
+            <button class="btn-addEmployee" id="btn-addEmployee"><img class="add-Icon" src="./Assets/Add.svg.svg" alt="add-Icon"><p>Añadir empleado</p></button>
+        </article>
+        
+    </main>
+    <div class="block none" id="addEmployee">
+        <article class="addEmployeeContainer">
+            <article class="addemployeeInformation">
+                <p class="information-add bold">Nombre(s): </p>
+                <input class="input-addEmployee" type="text" id="name-Employee">
+            </article>
+            <article class="addemployeeInformation">
+                <p class="information-add bold">Apellido(s):  </p>
+                <input class="input-addEmployee" type="text" id="lastName-Employee">
+            </article>
+            <article class="addemployeeInformation">
+                <p class="information-add bold">Telefono: </p>
+                <input class="input-addEmployee" type="tel" id="phone-Employee">
+            </article>
+            <article class="addemployeeInformation">
+                <p class="information-add bold">Email: </p>
+                <input class="input-addEmployee" type="email" id="mail-Employee">
+            </article>
+            <article class="addemployeeInformation">
+                <p class="information-add bold">Direccion: </p>
+                <input class="input-addEmployee" type="text" id="homAddress-Employee">
+            </article>
+            <div class="addemployeeInformation">
+                <button class="btn-addSend" id="btn-sendInfo" type="submit">Enviar</button>
+                <button class="btn-addDelete" id="btn-Cancel" type="submit">Cancelar</button>
+            </div>
+        </article>
+    </div>
+
+    <div class="block none" id="EditEmployeeContainer">
+        <section class="EditEmployeeContainer">
+            <article class="employeeInformation">
+                <p class="information bold">Nombre: </p>
+                <input class="informationEdited" id="inputName" type="text" value="">
+            </article>
+            <article class="employeeInformation">
+                <p class="information bold">Apellidos: </p>
+                <input class="informationEdited" id="inputLastName" type="text" value="">
+            </article>
+            <article class="employeeInformation">
+                <p class="information bold">Telefono: </p>
+                <input class="informationEdited" id="inputPhone" type="text" value="">
+            </article>
+            <article class="employeeInformation">
+                <p class="information bold">Email: </p>
+                <input class="informationEdited" id="inputMail" type="text" value="">
+            </article>
+            <article class="employeeInformation">
+                <p class="information bold">Direccion: </p>
+                <input class="informationEdited" id="inputHomeAddress" type="text" value="">
+            </article>
+            <div class="addemployeeInformation">
+                <button class="btn-addSend" id="btn-sendInfoEdited" type="submit">Enviar</button>
+                <button class="btn-addDelete" id="btn-CancelEdit" type="submit">Cancelar</button>
+            </div>
+        </section>
+    </div>
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.8/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>
