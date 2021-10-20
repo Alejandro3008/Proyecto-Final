@@ -154,9 +154,10 @@ function addEmployee(){
                         'Empleado añadido',
                         'succes'
                     )
-                    cancelInformation()
-                    loadData();
-                }).catch(error => console.log(error))
+                })
+                .then(() => cancelInformation())
+                .then(() => location.reload())
+                .catch(error => console.log(error))
             }
         })
     }else{
